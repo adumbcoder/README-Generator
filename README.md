@@ -1,6 +1,6 @@
  
   #  
-  
+  (https://img.shields.io/badge/License-MIT-green)
   [Description](#description)
     [Installation](#installation)
     [Usage](#usage)
@@ -15,7 +15,7 @@
   
 
   ### Installation:
-  You can clone the repo here. https://github.com/adumbcoder/README-Generator
+  
 
   ### Usage:
   
