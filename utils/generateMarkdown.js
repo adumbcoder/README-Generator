@@ -7,11 +7,11 @@
 function generateMarkdown(data) {
   return ` 
   # ${data.title} 
-  (https://img.shields.io/badge/License-${data.license}-green)
+  ![License](https://img.shields.io/static/v1?label=License&message=${data.license}&color=green)
   [Description](#description)
     [Installation](#installation)
     [Usage](#usage)
-    [Contributing](#contribution guidelines)
+    [Contributions](#contributions)
     [Tests](#tests)
     [License](#license)
   [Questions](#questions)
@@ -27,7 +27,7 @@ function generateMarkdown(data) {
   ### Usage:
   ${data.usage}
 
-  ### Contribution guidelines:
+  ### Contributions:
   ${data.contributing}
 
   ### Tests:
