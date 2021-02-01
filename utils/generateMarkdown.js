@@ -1,8 +1,11 @@
-
+const badge = ''
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  const badge = url(`https://img.shields.io/badge/License-${response.license}-green`)
+function renderLicenseBadge() {
+  if(response.license !== 'none'){
+    badge = url(`https://img.shields.io/badge/License-${response.license}-green`)
+  }
+  
   return badge;
 }
 
@@ -10,16 +13,16 @@ function renderLicenseBadge(license) {
 function generateMarkdown(data) {
   return ` 
   # ${data.title} 
-  ${renderLicenseBadge}
-  -[Description](#description)
-    *[Installation](#installation)
-    *[Usage](#usage)
-    *[Contributing](#contribution guidelines)
-    *[Tests](#tests)
-    *[License](#license)
-  -[Questions](#questions)
-    *[GitHub](#github)
-    *[Email](#email)
+  ${badge}
+  [Description](#description)
+    [Installation](#installation)
+    [Usage](#usage)
+    [Contributing](#contribution guidelines)
+    [Tests](#tests)
+    [License](#license)
+  [Questions](#questions)
+    [GitHub](#github)
+    [Email](#email)
     
   ## Description:
   ${data.description}
@@ -38,10 +41,10 @@ function generateMarkdown(data) {
 
   ### License:
 
-  [Common License source]('https://opensource.org/licenses')
+  [Common License source](https://opensource.org/licenses)
   ## Questions.
   ### GitHub:
-  ${data.github}
+  [Adumbcoder](${data.github})
 
   ### Email:
   ${data.email}

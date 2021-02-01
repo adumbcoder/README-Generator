@@ -44,11 +44,11 @@ const userInformation = [
             'MIT',
             'Apache',
             'lgpl_2_1',
-            'GPL (>= 2)',
-            'MIT/Apache-2.0',
+            'MIT/Apache',
             'GPL',
             'Apache 2',
-            'BSD'
+            'BSD',
+            'none'
         ]
     },
     {
